@@ -1,6 +1,6 @@
 module "roboshop" {
- # source = "../terraform-aws-vpc/aws-vpc"
-  source="git::https://github.com/chandu141186/terraform-aws-vpc.git?ref=main"
+ #source = "../terraform-aws-vpc/vpc1"
+  source="git::https://github.com/chandu141186/terraform-aws-vpc/tree/main/vpc?ref=main"
   project_name = var.project_name
   environment = var.environment
   common_tags = var.common_tags
@@ -13,3 +13,4 @@ module "roboshop" {
   private_subnets_cidr = var.private_subnets_cidr
 
 }
+
