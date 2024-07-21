@@ -1,6 +1,6 @@
 module "roboshop" {
  #source = "../terraform-aws-vpc/vpc1"
-  source="git::https://github.com/chandu141186/terraform-aws-vpc/tree/main/vpc?ref=main"
+  source="git::https://github.com/chandu141186/terraform-aws-vpc/vpc?ref=main"
   project_name = var.project_name
   environment = var.environment
   common_tags = var.common_tags
